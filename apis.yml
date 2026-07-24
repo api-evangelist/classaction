@@ -1,7 +1,12 @@
 aid: classaction
 name: ClassAction
-description: ClassAction is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ClassAction operates enjin (集団訴訟プラットフォーム enjin), a Japanese class-action / group-litigation
+  platform that connects consumers who have suffered damages from the same party with registered attorneys to
+  pursue collective lawsuits. Victims report their damages, registered lawyers volunteer to take on cases, and
+  participants share legal costs and evidence so that even small-value claimants can afford to litigate. The
+  service launched in May 2018 and is free for users. This is a consumer-facing legal-tech website with no
+  public developer API, documentation, or SDKs; it was added to the API Evangelist network as a 500 Global
+  portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/classaction/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://enjin-classaction.com/_assets/image/favicon.ico
 tags:
 - Company
+- Legal
+- Legal Tech
+- Class Action
+- Litigation
+- Consumer Protection
+- Japan
+- Legal Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/classaction-domain-security.yml
 - type: Website
   url: https://enjin-classaction.com
+- type: TermsOfService
+  url: https://enjin-classaction.com/terms/user/
+- type: PrivacyPolicy
+  url: https://enjin-classaction.com/privacy/
+- type: Login
+  url: https://enjin-classaction.com/login/
+- type: Blog
+  url: https://enjin-classaction.com/column/list/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
